@@ -7,7 +7,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active">Data Merk</li>
             </ol>
-            <a href="/merk/create" class="btn btn-primary">Tambah Data</a>
+            <a href="/merk/create" class="btn btn-primary">Tambah Data Merk</a>
         </div>
         <div class="card shadow">
             <div class="card-body">
@@ -26,8 +26,8 @@
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$merk->merk}}</td>
                                 <td>
-                                    <a href="" class="btn btn-warning">Edit</a>
-                                    <a href="" class="btn btn-danger">Hapus</a>
+                                    <a href="/merk/edit/{{$merk->id}}" class="btn btn-warning">Edit</a>
+                                    <a href="/merk/delete/{{$merk->id}}" class="btn btn-danger">Hapus</a>
                                 </td>
                             </tr>
                             @endforeach
